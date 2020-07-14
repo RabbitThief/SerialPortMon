@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{5409fe1d-f367-4074-9d0f-a3e3b3c5a1e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shortkey">
+      <UniqueIdentifier>{7cbbd6b1-1f5d-4099-be74-fb53e589480e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dialog">
+      <UniqueIdentifier>{47b7acc8-9716-47bc-b029-687095846675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CommPort">
+      <UniqueIdentifier>{d4733112-4ff0-4486-b632-dbea2cfa6647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppIni.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialPortMon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialPortMonDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\ascii_str.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\EditEx.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\EditKeyinScroll.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\EditLogB.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\escape_seq.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\etc.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\HyperLink.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Ini.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\MultimediaTimer.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Shortkey\shortkey.cpp">
+      <Filter>Source Files\Shortkey</Filter>
+    </ClCompile>
+    <ClCompile Include="Shortkey\virtual_key.cpp">
+      <Filter>Source Files\Shortkey</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgConfiguration.cpp">
+      <Filter>Source Files\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgConnection.cpp">
+      <Filter>Source Files\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgEthernet.cpp">
+      <Filter>Source Files\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgModem.cpp">
+      <Filter>Source Files\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSerial.cpp">
+      <Filter>Source Files\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgShortkey.cpp">
+      <Filter>Source Files\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgUdp.cpp">
+      <Filter>Source Files\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CommPort\CommThread.cpp">
+      <Filter>Source Files\CommPort</Filter>
+    </ClCompile>
+    <ClCompile Include="CommPort\SerialCOM.cpp">
+      <Filter>Source Files\CommPort</Filter>
+    </ClCompile>
+    <ClCompile Include="CommPort\SockCommon.cpp">
+      <Filter>Source Files\CommPort</Filter>
+    </ClCompile>
+    <ClCompile Include="CommPort\TcpClient.cpp">
+      <Filter>Source Files\CommPort</Filter>
+    </ClCompile>
+    <ClCompile Include="CommPort\TcpServer.cpp">
+      <Filter>Source Files\CommPort</Filter>
+    </ClCompile>
+    <ClCompile Include="CommPort\Udp.cpp">
+      <Filter>Source Files\CommPort</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppIni.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialPortMon.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialPortMonDlg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ascii_str.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\common.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\EditEx.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\EditKeyinScroll.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\EditLogB.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\escape_seq.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\etc.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\HyperLink.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Ini.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Lock.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\LockBlock.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\MultimediaTimer.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Timer.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Typedef.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Shortkey\shortkey.h">
+      <Filter>Source Files\Shortkey</Filter>
+    </ClInclude>
+    <ClInclude Include="Shortkey\virtual_key.h">
+      <Filter>Source Files\Shortkey</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgConfiguration.h">
+      <Filter>Source Files\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgConnection.h">
+      <Filter>Source Files\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgEthernet.h">
+      <Filter>Source Files\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgModem.h">
+      <Filter>Source Files\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSerial.h">
+      <Filter>Source Files\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgShortkey.h">
+      <Filter>Source Files\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgUdp.h">
+      <Filter>Source Files\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CommPort\CommPort.h">
+      <Filter>Source Files\CommPort</Filter>
+    </ClInclude>
+    <ClInclude Include="CommPort\CommThread.h">
+      <Filter>Source Files\CommPort</Filter>
+    </ClInclude>
+    <ClInclude Include="CommPort\SerialCOM.h">
+      <Filter>Source Files\CommPort</Filter>
+    </ClInclude>
+    <ClInclude Include="CommPort\SockCommon.h">
+      <Filter>Source Files\CommPort</Filter>
+    </ClInclude>
+    <ClInclude Include="CommPort\TcpClient.h">
+      <Filter>Source Files\CommPort</Filter>
+    </ClInclude>
+    <ClInclude Include="CommPort\TcpServer.h">
+      <Filter>Source Files\CommPort</Filter>
+    </ClInclude>
+    <ClInclude Include="CommPort\Udp.h">
+      <Filter>Source Files\CommPort</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\lamp_dis.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\lamp_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\lamp_on.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\SerialPortMon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\Logoff.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="res\Logon.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\SerialPortMon.manifest">
+      <Filter>Resource Files</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SerialPortMon.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\SerialPortMon.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

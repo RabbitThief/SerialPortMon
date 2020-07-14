@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D154FA8-BB2D-47ED-8080-E86446BA332C}</ProjectGuid>
+    <RootNamespace>SerialPortMon</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30212.121</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./Common;./Shortkey;./CommPort;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>./Common;./Shortkey;./CommPort;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AppIni.cpp" />
+    <ClCompile Include="Common\ascii_str.cpp" />
+    <ClCompile Include="Common\EditEx.cpp" />
+    <ClCompile Include="Common\EditKeyinScroll.cpp" />
+    <ClCompile Include="Common\EditLogB.cpp" />
+    <ClCompile Include="Common\escape_seq.cpp" />
+    <ClCompile Include="Common\etc.cpp" />
+    <ClCompile Include="Common\HyperLink.cpp" />
+    <ClCompile Include="Common\Ini.cpp" />
+    <ClCompile Include="Common\MultimediaTimer.cpp" />
+    <ClCompile Include="CommPort\CommThread.cpp" />
+    <ClCompile Include="CommPort\SerialCOM.cpp" />
+    <ClCompile Include="CommPort\SockCommon.cpp" />
+    <ClCompile Include="CommPort\TcpClient.cpp" />
+    <ClCompile Include="CommPort\TcpServer.cpp" />
+    <ClCompile Include="CommPort\Udp.cpp" />
+    <ClCompile Include="DlgConfiguration.cpp" />
+    <ClCompile Include="DlgConnection.cpp" />
+    <ClCompile Include="DlgEthernet.cpp" />
+    <ClCompile Include="DlgModem.cpp" />
+    <ClCompile Include="DlgSerial.cpp" />
+    <ClCompile Include="DlgShortkey.cpp" />
+    <ClCompile Include="DlgUdp.cpp" />
+    <ClCompile Include="SerialPortMon.cpp" />
+    <ClCompile Include="SerialPortMonDlg.cpp" />
+    <ClCompile Include="Shortkey\shortkey.cpp" />
+    <ClCompile Include="Shortkey\virtual_key.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppIni.h" />
+    <ClInclude Include="Common\ascii_str.h" />
+    <ClInclude Include="Common\common.h" />
+    <ClInclude Include="Common\EditEx.h" />
+    <ClInclude Include="Common\EditKeyinScroll.h" />
+    <ClInclude Include="Common\EditLogB.h" />
+    <ClInclude Include="Common\escape_seq.h" />
+    <ClInclude Include="Common\etc.h" />
+    <ClInclude Include="Common\HyperLink.h" />
+    <ClInclude Include="Common\Ini.h" />
+    <ClInclude Include="Common\Lock.h" />
+    <ClInclude Include="Common\LockBlock.h" />
+    <ClInclude Include="Common\MultimediaTimer.h" />
+    <ClInclude Include="Common\Timer.h" />
+    <ClInclude Include="Common\Typedef.h" />
+    <ClInclude Include="CommPort\CommPort.h" />
+    <ClInclude Include="CommPort\CommThread.h" />
+    <ClInclude Include="CommPort\SerialCOM.h" />
+    <ClInclude Include="CommPort\SockCommon.h" />
+    <ClInclude Include="CommPort\TcpClient.h" />
+    <ClInclude Include="CommPort\TcpServer.h" />
+    <ClInclude Include="CommPort\Udp.h" />
+    <ClInclude Include="DlgConfiguration.h" />
+    <ClInclude Include="DlgConnection.h" />
+    <ClInclude Include="DlgEthernet.h" />
+    <ClInclude Include="DlgModem.h" />
+    <ClInclude Include="DlgSerial.h" />
+    <ClInclude Include="DlgShortkey.h" />
+    <ClInclude Include="DlgUdp.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SerialPortMon.h" />
+    <ClInclude Include="SerialPortMonDlg.h" />
+    <ClInclude Include="Shortkey\shortkey.h" />
+    <ClInclude Include="Shortkey\virtual_key.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\lamp_dis.bmp" />
+    <Image Include="res\lamp_off.bmp" />
+    <Image Include="res\lamp_on.bmp" />
+    <Image Include="res\SerialPortMon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\Logoff.wav" />
+    <Media Include="res\Logon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\SerialPortMon.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SerialPortMon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\SerialPortMon.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="SerialPortMon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
